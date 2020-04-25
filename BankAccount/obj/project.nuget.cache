@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hheg4tHBXPTsMcETYD8IjbkrCh+2ELDHy0ITWuPE05FIwY/4MCC6PrqS5+BGq7LNU938U5W9tNw3QxQykMQL7w==",
+  "success": true,
+  "projectFilePath": "C:\\repo\\BankAccount-FSharp\\BankAccount\\BankAccount.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Papagaio\\.nuget\\packages\\fsharp.core\\4.7.0\\fsharp.core.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
