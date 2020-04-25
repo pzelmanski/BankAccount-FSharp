@@ -10,4 +10,8 @@
         <Compile Include="BankAccount.fs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BankAccount-Specification\BankAccount-Specification.fsproj" />
+    </ItemGroup>
+
 </Project>

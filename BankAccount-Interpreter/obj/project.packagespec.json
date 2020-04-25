@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\repo\\BankAccount-FSharp\\BankAccount-Specification\\BankAccount-Specification.fsproj": {
+            "projectPath": "C:\\repo\\BankAccount-FSharp\\BankAccount-Specification\\BankAccount-Specification.fsproj"
+          }
+        }
       }
     }
   },

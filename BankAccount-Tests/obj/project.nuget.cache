@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U5x1sYP+aGMwsGwLeTTRaCn8MVGURGijG9Acr+e24/AkzEk21oqn9167njyrWgx3YDw1WRYovLcwoAsCmQ8vUQ==",
+  "dgSpecHash": "oDgSisCP2jZjHMv7sVUUmUP1DOkYDpHzDNp8frTC1j7yq2xIWVu2s8WWBN4IPaKQcvWeYphhphqvyIHxSVFBbg==",
   "success": true,
   "projectFilePath": "C:\\repo\\BankAccount-FSharp\\BankAccount-Tests\\BankAccount-Tests.fsproj",
   "expectedPackageFiles": [

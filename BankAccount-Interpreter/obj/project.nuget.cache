@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pOz8YK9nq7o75hv6imqUt9npWT3IpGmHspMijDUoL6Uql+4F3QKdMzkW8nFbN6RNrxggAisBj8rzxslrd2qyJg==",
+  "dgSpecHash": "8+dPgeB8Fnt+62x1H60weMn99RmU9GENTQq2qM3tCXgn+gzsqQ9bwnxXjiyFpWN+dQuozM6ABkSTd1chKdK8zg==",
   "success": true,
   "projectFilePath": "C:\\repo\\BankAccount-FSharp\\BankAccount-Interpreter\\BankAccount-Interpreter.fsproj",
   "expectedPackageFiles": [

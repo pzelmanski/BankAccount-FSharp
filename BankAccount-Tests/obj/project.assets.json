@@ -1026,6 +1026,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "BankAccount-Specification": "1.0.0",
           "FSharp.Core": "4.7.0"
         },
         "compile": {
@@ -1033,6 +1034,19 @@
         },
         "runtime": {
           "bin/placeholder/BankAccount-Interpreter.dll": {}
+        }
+      },
+      "BankAccount-Specification/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/BankAccount-Specification.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankAccount-Specification.dll": {}
         }
       }
     }
@@ -3851,6 +3865,11 @@
       "type": "project",
       "path": "../BankAccount-Interpreter/BankAccount-Interpreter.fsproj",
       "msbuildProject": "../BankAccount-Interpreter/BankAccount-Interpreter.fsproj"
+    },
+    "BankAccount-Specification/1.0.0": {
+      "type": "project",
+      "path": "../BankAccount-Specification/BankAccount-Specification.fsproj",
+      "msbuildProject": "../BankAccount-Specification/BankAccount-Specification.fsproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -1,4 +1,6 @@
 ﻿namespace BankAccount_Specification.Operations
 
+open BankAccount_Specification.Language
+
 module Operations =
-    type myType = int -> int //todo change this
+    type GetBalance = Account -> Money

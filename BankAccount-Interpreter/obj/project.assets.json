@@ -51,6 +51,19 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "BankAccount-Specification/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/BankAccount-Specification.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankAccount-Specification.dll": {}
+        }
       }
     }
   },
@@ -99,10 +112,16 @@
         "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
         "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
       ]
+    },
+    "BankAccount-Specification/1.0.0": {
+      "type": "project",
+      "path": "../BankAccount-Specification/BankAccount-Specification.fsproj",
+      "msbuildProject": "../BankAccount-Specification/BankAccount-Specification.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BankAccount-Specification >= 1.0.0",
       "FSharp.Core >= 4.7.0"
     ]
   },
@@ -131,7 +150,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\repo\\BankAccount-FSharp\\BankAccount-Specification\\BankAccount-Specification.fsproj": {
+              "projectPath": "C:\\repo\\BankAccount-FSharp\\BankAccount-Specification\\BankAccount-Specification.fsproj"
+            }
+          }
         }
       }
     },

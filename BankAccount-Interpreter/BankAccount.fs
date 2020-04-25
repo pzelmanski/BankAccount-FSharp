@@ -1,5 +1,7 @@
 ﻿namespace BankAccount_Interpreter
 
+open BankAccount_Specification.Operations.Operations
+
 module BankAccount =
     let createBankAccount() = failwith "You need to implement this function."
 
@@ -7,6 +9,6 @@ module BankAccount =
 
     let closeAccount account = failwith "You need to implement this function."
 
-    let getBalance account = failwith "You need to implement this function."
+    let getBalance : GetBalance = failwith "You need to implement this function."
 
     let updateBalance change account = failwith "You need to implement this function."
