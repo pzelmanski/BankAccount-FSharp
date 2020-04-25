@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "BankAccount-Interpreter/1.0.0": {
         "dependencies": {
+          "BankAccount-Specification": "1.0.0",
           "FSharp.Core": "4.7.0"
         },
         "runtime": {
@@ -62,6 +63,14 @@
             "locale": "zh-Hant"
           }
         }
+      },
+      "BankAccount-Specification/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "runtime": {
+          "BankAccount-Specification.dll": {}
+        }
       }
     }
   },
@@ -77,6 +86,11 @@
       "sha512": "sha512-6Bf2qzSCaJoP6tTfO+a5muUS7QbyJANqSut73zQvwQ9It5P0ITz9VKseeia2ofco30c55EQ0jA2wf2+A2gpGnw==",
       "path": "fsharp.core/4.7.0",
       "hashPath": "fsharp.core.4.7.0.nupkg.sha512"
+    },
+    "BankAccount-Specification/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

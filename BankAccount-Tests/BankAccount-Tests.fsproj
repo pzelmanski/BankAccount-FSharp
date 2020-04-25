@@ -8,6 +8,7 @@
 
     <ItemGroup>
         <Compile Include="BankAccountTests.fs" />
+        <Compile Include="MyBankAccountTests.fs" />
     </ItemGroup>
 
     <ItemGroup>

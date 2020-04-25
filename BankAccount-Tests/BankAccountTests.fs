@@ -8,37 +8,36 @@ open BankAccount_Interpreter.BankAccount
 
 [<Fact>]
 let ``Returns empty balance after opening`` () =
-    let account = createBankAccount() |> openAccount
-
-    getBalance account |> should equal (Some 0.0m)
+    let account = create() |> openAccount
+    balance account |> should equal (Some 0.0m)
 
 [<Fact>]
 let ``Check basic balance`` () =
-    let account = createBankAccount() |> openAccount
-    let openingBalance = account |> getBalance 
+    let account = create() |> openAccount
+    let openingBalance = account |> balance 
 
     let updatedBalance = 
         account
         |> updateBalance 10.0m
-        |> getBalance
+        |> balance
 
     openingBalance |> should equal (Some 0.0m)
     updatedBalance |> should equal (Some 10.0m)
 
 [<Fact>]
 let ``Balance can increment or decrement`` () =    
-    let account = createBankAccount() |> openAccount
-    let openingBalance = account |> getBalance 
+    let account = create() |> openAccount
+    let openingBalance = account |> balance 
 
     let addedBalance = 
         account 
         |> updateBalance 10.0m
-        |> getBalance
+        |> balance
 
     let subtractedBalance = 
         account 
         |> updateBalance -15.0m
-        |> getBalance
+        |> balance
 
     openingBalance |> should equal (Some 0.0m)
     addedBalance |> should equal (Some 10.0m)
@@ -47,17 +46,17 @@ let ``Balance can increment or decrement`` () =
 [<Fact>]
 let ``Account can be closed`` () =
     let account = 
-        createBankAccount()
+        create()
         |> openAccount
         |> closeAccount
 
-    getBalance account |> should equal None
+    balance account |> should equal None
     account |> should not' (equal None)
     
 [<Fact>]
 let ``Account can be updated from multiple threads`` () =
     let account = 
-        createBankAccount()
+        create()
         |> openAccount
 
     let updateAccountAsync =        
@@ -73,4 +72,4 @@ let ``Account can be updated from multiple threads`` () =
     |> Async.RunSynchronously
     |> ignore
 
-    getBalance account |> should equal (Some 1000.0m)
+    balance account |> should equal (Some 1000.0m)

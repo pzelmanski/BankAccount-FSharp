@@ -799,10 +799,19 @@
       },
       "BankAccount-Interpreter/1.0.0": {
         "dependencies": {
+          "BankAccount-Specification": "1.0.0",
           "FSharp.Core": "4.7.0"
         },
         "runtime": {
           "BankAccount-Interpreter.dll": {}
+        }
+      },
+      "BankAccount-Specification/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "runtime": {
+          "BankAccount-Specification.dll": {}
         }
       }
     }
@@ -1199,6 +1208,11 @@
       "hashPath": "xunit.runner.visualstudio.2.4.1.nupkg.sha512"
     },
     "BankAccount-Interpreter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BankAccount-Specification/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

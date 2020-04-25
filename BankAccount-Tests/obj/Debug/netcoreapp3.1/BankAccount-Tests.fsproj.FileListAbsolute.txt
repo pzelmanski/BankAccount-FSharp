@@ -116,3 +116,6 @@ C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\zh-Hant\Mic
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Interpreter.exe
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Interpreter.dll
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Interpreter.pdb
+C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Specification.exe
+C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Specification.dll
+C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Specification.pdb

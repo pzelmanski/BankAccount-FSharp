@@ -25,3 +25,6 @@ C:\repo\BankAccount-FSharp\BankAccount-Interpreter\obj\Debug\netcoreapp3.1\BankA
 C:\repo\BankAccount-FSharp\BankAccount-Interpreter\obj\Debug\netcoreapp3.1\BankAccount-Interpreter.dll
 C:\repo\BankAccount-FSharp\BankAccount-Interpreter\obj\Debug\netcoreapp3.1\BankAccount-Interpreter.pdb
 C:\repo\BankAccount-FSharp\BankAccount-Interpreter\obj\Debug\netcoreapp3.1\BankAccount-Interpreter.genruntimeconfig.cache
+C:\repo\BankAccount-FSharp\BankAccount-Interpreter\bin\Debug\netcoreapp3.1\BankAccount-Specification.exe
+C:\repo\BankAccount-FSharp\BankAccount-Interpreter\bin\Debug\netcoreapp3.1\BankAccount-Specification.dll
+C:\repo\BankAccount-FSharp\BankAccount-Interpreter\bin\Debug\netcoreapp3.1\BankAccount-Specification.pdb

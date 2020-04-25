@@ -3,4 +3,7 @@
 open BankAccount_Specification.Language
 
 module Operations =
-    type GetBalance = Account -> Money
+    type GetBalance = OpenedAccount -> Money
+    type CreateBankAccount = unit -> PreActivatedAccount
+    type OpenAccount = PreActivatedAccount -> OpenedAccount
+    
