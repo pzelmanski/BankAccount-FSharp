@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "BankAccount-Tests/1.0.0": {
         "dependencies": {
-          "BankAccount": "1.0.0",
+          "BankAccount-Interpreter": "1.0.0",
           "FSharp.Core": "4.7.0",
           "FsUnit": "3.8.1",
           "FsUnit.xUnit": "3.8.1",
@@ -797,12 +797,12 @@
           "Microsoft.NET.Test.Sdk": "16.6.1"
         }
       },
-      "BankAccount/1.0.0": {
+      "BankAccount-Interpreter/1.0.0": {
         "dependencies": {
           "FSharp.Core": "4.7.0"
         },
         "runtime": {
-          "BankAccount.dll": {}
+          "BankAccount-Interpreter.dll": {}
         }
       }
     }
@@ -1198,7 +1198,7 @@
       "path": "xunit.runner.visualstudio/2.4.1",
       "hashPath": "xunit.runner.visualstudio.2.4.1.nupkg.sha512"
     },
-    "BankAccount/1.0.0": {
+    "BankAccount-Interpreter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

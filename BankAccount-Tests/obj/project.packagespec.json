@@ -16,8 +16,8 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "C:\\repo\\BankAccount-FSharp\\BankAccount\\BankAccount.fsproj": {
-            "projectPath": "C:\\repo\\BankAccount-FSharp\\BankAccount\\BankAccount.fsproj"
+          "C:\\repo\\BankAccount-FSharp\\BankAccount-Interpreter\\BankAccount-Interpreter.fsproj": {
+            "projectPath": "C:\\repo\\BankAccount-FSharp\\BankAccount-Interpreter\\BankAccount-Interpreter.fsproj"
           }
         }
       }

@@ -4,17 +4,17 @@ module BankAccountTest
 
 open Xunit
 open FsUnit.Xunit
-open BankAccount
+open BankAccount_Interpreter.BankAccount
 
 [<Fact>]
 let ``Returns empty balance after opening`` () =
-    let account = mkBankAccount() |> openAccount
+    let account = createBankAccount() |> openAccount
 
     getBalance account |> should equal (Some 0.0m)
 
 [<Fact>]
 let ``Check basic balance`` () =
-    let account = mkBankAccount() |> openAccount
+    let account = createBankAccount() |> openAccount
     let openingBalance = account |> getBalance 
 
     let updatedBalance = 
@@ -27,7 +27,7 @@ let ``Check basic balance`` () =
 
 [<Fact>]
 let ``Balance can increment or decrement`` () =    
-    let account = mkBankAccount() |> openAccount
+    let account = createBankAccount() |> openAccount
     let openingBalance = account |> getBalance 
 
     let addedBalance = 
@@ -47,7 +47,7 @@ let ``Balance can increment or decrement`` () =
 [<Fact>]
 let ``Account can be closed`` () =
     let account = 
-        mkBankAccount()
+        createBankAccount()
         |> openAccount
         |> closeAccount
 
@@ -57,7 +57,7 @@ let ``Account can be closed`` () =
 [<Fact>]
 let ``Account can be updated from multiple threads`` () =
     let account = 
-        mkBankAccount()
+        createBankAccount()
         |> openAccount
 
     let updateAccountAsync =        

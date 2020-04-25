@@ -1,4 +1,3 @@
-C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount.exe
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Tests.exe
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Tests.deps.json
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Tests.runtimeconfig.json
@@ -27,8 +26,6 @@ C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\ru\FSharp.C
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\tr\FSharp.Core.resources.dll
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\zh-Hans\FSharp.Core.resources.dll
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\zh-Hant\FSharp.Core.resources.dll
-C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount.dll
-C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount.pdb
 C:\repo\BankAccount-FSharp\BankAccount-Tests\obj\Debug\netcoreapp3.1\BankAccount-Tests.fsprojAssemblyReference.cache
 C:\repo\BankAccount-FSharp\BankAccount-Tests\obj\Debug\netcoreapp3.1\BankAccount-Tests.AssemblyInfoInputs.cache
 C:\repo\BankAccount-FSharp\BankAccount-Tests\obj\Debug\netcoreapp3.1\BankAccount-Tests.AssemblyInfo.fs
@@ -116,3 +113,6 @@ C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\zh-Hans\Mic
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Interpreter.exe
+C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Interpreter.dll
+C:\repo\BankAccount-FSharp\BankAccount-Tests\bin\Debug\netcoreapp3.1\BankAccount-Interpreter.pdb
