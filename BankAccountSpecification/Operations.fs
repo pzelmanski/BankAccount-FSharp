@@ -6,5 +6,5 @@ module Operations =
     type GetBalance = OpenedAccount -> Money
     type CreateBankAccount = unit -> PreActivatedAccount
     type OpenAccount = PreActivatedAccount -> OpenedAccount
-    type ChangeBalance = Money -> OpenedAccount -> OpenedAccount
+    type ChangeBalance = Transaction -> OpenedAccount -> OpenedAccount
     type TakeLastTransaction = OpenedAccount -> Transaction option

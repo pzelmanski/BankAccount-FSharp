@@ -20,11 +20,14 @@ module BankAccount =
         fun account -> account.Balance
 
     let updateBalance: ChangeBalance =
-        fun amount account ->
-            let newTransaction = [ Credit { Amount = amount } ]
+        fun transaction account ->
             { Account = account.Account
-              Transactions = newTransaction |> List.append account.Transactions
-              Balance = account.Balance + amount }
+              Transactions = transaction :: account.Transactions
+              Balance =
+                  account.Balance + (transaction
+                                     |> function
+                                     | Credit c -> c.Amount
+                                     | Debit d -> -d.Amount) }
 
     let takeLastTransaction: TakeLastTransaction =
         fun account -> account.Transactions |> List.tryHead
