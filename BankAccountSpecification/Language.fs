@@ -16,13 +16,25 @@ module Language =
     type Id = string
     type Account = { Identity : Id }
     
+    // some draft of an idea for a persistance layer
+    // list of accounts [id]
+    // create an event (accountId : id)
+    // find an account with accountId
+    // changeBalance of given account
+    
     type OpenedAccount =
         { Account : Account
           Transactions : Transactions
           Balance : Amount}
 
     type ClosedAccount =
-        | ClosedAccount of Account
+        | Closed of Account
     
     type PreActivatedAccount =
-        | PreActivatedAccount of Account
+        | PreActivated of Account
+        
+    type AllAccount =
+        | PreActivated of PreActivatedAccount
+        | Opened of OpenedAccount
+        | Closed of ClosedAccount
+        
