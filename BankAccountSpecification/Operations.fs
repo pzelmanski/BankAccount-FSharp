@@ -7,3 +7,4 @@ module Operations =
     type CreateBankAccount = unit -> PreActivatedAccount
     type OpenAccount = PreActivatedAccount -> OpenedAccount
     type ChangeBalance = Money -> OpenedAccount -> OpenedAccount
+    type TakeLastTransaction = OpenedAccount -> Transaction option

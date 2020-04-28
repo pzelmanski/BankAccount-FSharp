@@ -3,25 +3,22 @@
 module Language = 
     type Money = decimal
     type Amount = decimal
-//    type Details = string
-//    type TransactionDetails =
-//          { Amount : Amount
-//            Details : Details }
-//    
-//    type Transaction =
-//         | Debit of TransactionDetails
-//         | Credit of TransactionDetails
-//        
-//    type Transactions = Transaction list
-
-//    type Transaction =
-//         | Debit of TransactionDetails
-//         | Credit of TransactionDetails
+    
+    type TransactionDetails =
+          { Amount : Amount }
+    
+    type Transaction =
+         | Debit of TransactionDetails
+         | Credit of TransactionDetails
+         
+    type Transactions = Transaction list
+    
     type Id = string
     type Account = { Identity : Id }
     
     type OpenedAccount =
         { Account : Account
+          Transactions : Transactions
           Balance : Amount}
 
     type ClosedAccount =
