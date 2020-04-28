@@ -9,12 +9,12 @@ module BankAccount =
         fun () ->
             PreActivatedAccount.PreActivatedAccount { Identity = Guid.NewGuid |> string }
 
-    let openAccount : OpenAccount =
+    let ``open`` : OpenAccount =
         fun (PreActivatedAccount account) ->
             { Account = account
               Balance = 0.0m }
 
-    let closeAccount account = failwith "You need to implement this function."
+    let close account = failwith "You need to implement this function."
 
     let balance : GetBalance =
         fun account ->

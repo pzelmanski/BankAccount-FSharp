@@ -6,12 +6,12 @@ open BankAccountInterpreter.BankAccount
 
 [<Fact>]
 let ``Returns empty balance after opening`` () =
-    let account = create() |> openAccount
+    let account = create() |> ``open``
     balance account |> should equal (Some 0.0m)
 
 [<Fact>]
 let ``Check basic balance`` () =
-    let account = create() |> openAccount
+    let account = create() |> ``open``
     let openingBalance = account |> balance 
 
     let updatedBalance = 
@@ -24,7 +24,7 @@ let ``Check basic balance`` () =
 
 [<Fact>]
 let ``Balance can increment or decrement`` () =    
-    let account = create() |> openAccount
+    let account = create() |> ``open``
     let openingBalance = account |> balance 
 
     let addedBalance = 
@@ -45,8 +45,8 @@ let ``Balance can increment or decrement`` () =
 let ``Account can be closed`` () =
     let account = 
         create()
-        |> openAccount
-        |> closeAccount
+        |> ``open``
+        |> close
 
     balance account |> should equal None
     account |> should not' (equal None)
@@ -55,7 +55,7 @@ let ``Account can be closed`` () =
 let ``Account can be updated from multiple threads`` () =
     let account = 
         create()
-        |> openAccount
+        |> ``open``
 
     let updateAccountAsync =        
         async {                             
