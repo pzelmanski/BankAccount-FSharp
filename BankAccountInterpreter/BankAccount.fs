@@ -20,4 +20,7 @@ module BankAccount =
         fun account ->
             account.Balance
 
-    let updateBalance change account = failwith "You need to implement this function."
+    let updateBalance : ChangeBalance =
+        fun amount account ->
+            { Account = account.Account
+              Balance = account.Balance + amount }

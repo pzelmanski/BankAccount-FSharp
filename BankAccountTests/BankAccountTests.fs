@@ -5,11 +5,6 @@ open FsUnit.Xunit
 open BankAccountInterpreter.BankAccount
 
 [<Fact>]
-let ``Returns empty balance after opening`` () =
-    let account = create() |> ``open``
-    balance account |> should equal (Some 0.0m)
-
-[<Fact>]
 let ``Check basic balance`` () =
     let account = create() |> ``open``
     let openingBalance = account |> balance 
@@ -19,8 +14,8 @@ let ``Check basic balance`` () =
         |> updateBalance 10.0m
         |> balance
 
-    openingBalance |> should equal (Some 0.0m)
-    updatedBalance |> should equal (Some 10.0m)
+    openingBalance |> should equal ( 0.0m)
+    updatedBalance |> should equal ( 10.0m)
 
 [<Fact>]
 let ``Balance can increment or decrement`` () =    
@@ -37,9 +32,9 @@ let ``Balance can increment or decrement`` () =
         |> updateBalance -15.0m
         |> balance
 
-    openingBalance |> should equal (Some 0.0m)
-    addedBalance |> should equal (Some 10.0m)
-    subtractedBalance |> should equal (Some -5.0m)
+    openingBalance |> should equal (0.0m)
+    addedBalance |> should equal (10.0m)
+    subtractedBalance |> should equal (-15.0m)
 
 [<Fact>]
 let ``Account can be closed`` () =
@@ -70,4 +65,4 @@ let ``Account can be updated from multiple threads`` () =
     |> Async.RunSynchronously
     |> ignore
 
-    balance account |> should equal (Some 1000.0m)
+    balance account |> should equal ( 1000.0m)
