@@ -1,4 +1,30 @@
-# Bank Account
+# My own set of rules
+
+* Account has 3 states
+    * Pre-activated
+        * There are no transactions nor balance (empty, 0)
+        * Account can be only opened (and maybe viewed, but in readonly mode, we'll see)
+    * Opened
+        * There is a balance and transactions, the account is active
+        * Balance can be changed
+    * Closed
+        * Does not have any balance
+        * So far not implemented yet
+        * Has history of transactions (from the time it was opened)
+        * Cannot make any changes on closed account
+* Changing balance should add a transaction to account
+
+Soon I'm planning to:
+* Implement ATM
+    * It will be able to deposit or withdraw money with it
+
+And probably more to come. We'll see ;) 
+
+---
+
+# Original set of rules
+
+## Bank Account
 
 Simulate a bank account supporting opening/closing, withdrawals, and deposits
 of money. Watch out for concurrent transactions!
