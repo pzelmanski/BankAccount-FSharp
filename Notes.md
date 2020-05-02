@@ -32,3 +32,10 @@ let openAccount : OpenAccount =
 
 thrundi: Treat it the same way as you deconstruct DU cases when you do match type of DU = | A of int | B of string
 thrundi: match du with | A x -> x.ToString() // x is int | B y -> y // y is string
+
+
+Creating a copy of an immutable data:
+let initialPerson = {PersonId = PersonId 42; Name = "Joseph"}
+let updatesPerson = {initialPerson with Name = "Joe"}
+
+Aggregates - basic unit of persistance. Aggregates should be loaded and saved as a whole. Each database transaction should work with a single aggreagate (cannot be multiple). It's not allowed to work with only a part of an aggregate.
