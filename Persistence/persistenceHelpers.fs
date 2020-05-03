@@ -3,8 +3,8 @@
 open BankAccountSpecification.Language
 open Persistance.Language
 
-module persistanceHelpers =
+module persistenceHelpers =
     let getAccount (getAccount : unit -> Result<AllAccount, string>) (id : string) : Result<AllAccount, string>  =
         getAccount()
+        
     
-//module persistance =

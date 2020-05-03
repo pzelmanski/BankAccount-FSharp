@@ -6,9 +6,9 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountTests", "BankAcc
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountSpecification", "BankAccountSpecification\BankAccountSpecification.fsproj", "{6A340FF3-FCAE-4741-925D-FA14C121E30A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Persistance", "Persistance\Persistance.fsproj", "{D2C8BC86-D358-4F52-B0F2-4BE05FA7E123}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Persistence", "Persistence\Persistence.fsproj", "{D2C8BC86-D358-4F52-B0F2-4BE05FA7E123}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PersistanceTests", "PersistanceTests\PersistanceTests.fsproj", "{6ED97769-4F89-4AC5-9E7F-07B37F7E7A5C}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PersistenceTests", "PersistenceTests\PersistenceTests.fsproj", "{6ED97769-4F89-4AC5-9E7F-07B37F7E7A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

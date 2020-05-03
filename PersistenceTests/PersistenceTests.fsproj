@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Persistance\Persistance.fsproj" />
+      <ProjectReference Include="..\Persistence\Persistence.fsproj" />
     </ItemGroup>
 
 </Project>

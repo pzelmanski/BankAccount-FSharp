@@ -6,7 +6,7 @@
 
     <ItemGroup>
       <Compile Include="Language.fs" />
-      <Compile Include="PersistanceHelpers.fs" />
+      <Compile Include="persistenceHelpers.fs" />
     </ItemGroup>
 
     <ItemGroup>

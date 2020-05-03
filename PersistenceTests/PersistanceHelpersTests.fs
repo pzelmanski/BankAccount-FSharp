@@ -21,7 +21,7 @@ module PersistanceHelpersTests =
 //        |> persistanceHelpers.addAccount
         
         // TODO: this is all hardcoded for now
-        persistanceHelpers.getAccount AccountDatabase.Instance.getAccount "id"
+        persistenceHelpers.getAccount AccountDatabase.Instance.getAccount "id"
         |> function
             | Ok _ ->
                 function
