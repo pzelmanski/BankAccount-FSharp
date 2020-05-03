@@ -20,9 +20,9 @@ module Language =
         static member Instance = instance
         member this.Accounts : AllAccounts = []
         member this.getAccount() =
-            Opened <| { Account = {Identity = Guid.NewGuid() |> string }
-                        Transactions = []
-                        Balance = 1m }
+            Ok (Opened <| { Account = {Identity = Guid.NewGuid() |> string }
+                            Transactions = []
+                            Balance = 1m })
             
             // this should be closer to domain logic, not persistance
 //            instance.Accounts.Head

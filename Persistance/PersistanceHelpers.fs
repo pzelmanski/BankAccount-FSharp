@@ -4,7 +4,7 @@ open BankAccountSpecification.Language
 open Persistance.Language
 
 module persistanceHelpers =
-    let getAccount (persistance : AccountDatabase) (id : string) : AllAccount  =
-        persistance.getAccount()
+    let getAccount (getAccount : unit -> Result<AllAccount, string>) (id : string) : Result<AllAccount, string>  =
+        getAccount()
     
 //module persistance =

@@ -21,11 +21,13 @@ module PersistanceHelpersTests =
 //        |> persistanceHelpers.addAccount
         
         // TODO: this is all hardcoded for now
-        persistanceHelpers.getAccount AccountDatabase.Instance "id"
+        persistanceHelpers.getAccount AccountDatabase.Instance.getAccount "id"
         |> function
-            | Opened x -> x.Balance |> should equal 1m
+            | Ok _ ->
+                function
+                    | Opened x -> x.Balance |> should equal 1m
+                    | _ -> failwith "account not found"
             | _ -> failwith "account not found"
-        
 //        BankAccount.create ()
 //        |> ``open``
 //        |> updateBalance (Debit { Amount = 10m })
