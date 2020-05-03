@@ -2,15 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>CoreSpecification</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="Language.fs" />
-      <Compile Include="Operations.fs" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Common\Common.fsproj" />
+        <Compile Include="Library.fs" />
+        <Compile Include="Language.fs" />
     </ItemGroup>
 
 </Project>

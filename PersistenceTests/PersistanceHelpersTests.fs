@@ -1,8 +1,7 @@
 ﻿namespace PersistanceTests
 
-open System
 open Persistance
-open Persistance.Language
+open Persistence
 open Xunit
 open FsUnit.Xunit
 open BankAccountSpecification.Language

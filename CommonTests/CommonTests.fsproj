@@ -5,12 +5,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="Language.fs" />
-      <Compile Include="Operations.fs" />
+        <Compile Include="LanguageTests.fs" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Common\Common.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FsUnit.xUnit" Version="3.8.1" />
+      <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     </ItemGroup>
 
 </Project>
