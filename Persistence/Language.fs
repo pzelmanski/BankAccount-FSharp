@@ -20,7 +20,7 @@ module Language =
         static member Instance = instance
         member this.Accounts : AllAccounts = []
         member this.getAccount() =
-            Ok (Opened <| { Account = {Identity = Guid.NewGuid() |> string }
+            Ok (Opened <| { Identity = {Identity = Guid.NewGuid() |> string }
                             Transactions = []
                             Balance = 1m })
             

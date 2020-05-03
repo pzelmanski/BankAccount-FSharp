@@ -23,15 +23,13 @@ module Language =
     // changeBalance of given account
     
     type OpenedAccount =
-        { Account : Account
+        { Identity : Account
           Transactions : Transactions
           Balance : Amount}
 
-    type ClosedAccount =
-        | Closed of Account
+    type ClosedAccount = { Identity : Account }
     
-    type PreActivatedAccount =
-        | PreActivated of Account
+    type PreActivatedAccount = { Identity : Account }
         
     type AllAccount =
         | PreActivated of PreActivatedAccount

@@ -6,11 +6,11 @@ open BankAccountSpecification.Language
 
 module BankAccount =
     let create: CreateBankAccount =
-        fun () -> PreActivatedAccount.PreActivated { Identity = Guid.NewGuid() |> string }
+        fun () -> { Identity = { Identity = Guid.NewGuid() |> string} }
 
     let ``open``: OpenAccount =
-        fun (PreActivatedAccount.PreActivated account) ->
-            { Account = account
+        fun (account) ->
+            { Identity = account.Identity
               Transactions = []
               Balance = 0.0m }
 
@@ -36,7 +36,7 @@ module BankAccount =
         
     let updateBalance: ChangeBalance =
         fun transaction account ->
-            { Account = account.Account
+            { Identity = account.Identity
               Transactions = transaction :: account.Transactions
               Balance =
                   account.Balance + (transaction
