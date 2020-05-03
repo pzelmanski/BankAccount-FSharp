@@ -39,3 +39,13 @@ let initialPerson = {PersonId = PersonId 42; Name = "Joseph"}
 let updatesPerson = {initialPerson with Name = "Joe"}
 
 Aggregates - basic unit of persistance. Aggregates should be loaded and saved as a whole. Each database transaction should work with a single aggreagate (cannot be multiple). It's not allowed to work with only a part of an aggregate.
+
+Domain types store within namespace project.Domain
+
+let undefined<'T> : 'T = failwith "Not implemented yet"
+
+type X = {ASD:Y; ..} and Y = {..} <- this `and` allows to forward references
+
+Units of Measures - take a look, think if could use (for a currency maybe?) <- a way to use kilograms or meters in code (let value = 1<kg>)
+
+Use NonEmptyList for ensuring that the list will not be empty (need to implement by myself or could use FSharpx.Collections)
