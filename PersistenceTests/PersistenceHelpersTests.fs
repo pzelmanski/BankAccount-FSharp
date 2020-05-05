@@ -7,7 +7,7 @@ open FsUnit
 open BankAccountSpecification.Language
 open BankAccountInterpreter
 
-module PersistanceHelpersTests =
+module PersistenceHelpersTests =
     [<Fact>]
     let ``When adding to AccountDatabase it should persist`` () =
         async {
@@ -19,8 +19,10 @@ module PersistanceHelpersTests =
                 match r2 with
                 | Ok account ->
                     match account with
-                    | Opened x -> x.Balance |> should equal 1m
-                    | _ -> failwith "account not found"
+                        | Some account -> match account with
+                                            | PreActivated _ -> ()
+                                            | _ -> failwith "account is not in opened state"
+                        | None -> failwith "account not existing"
                 | Error e -> failwith e
             | Error e -> failwith e
         }

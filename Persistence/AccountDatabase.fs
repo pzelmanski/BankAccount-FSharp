@@ -11,12 +11,12 @@ type AccountDatabase private () =
         async {
             return accounts.TryFind identity
                    |> function
-                   | Some x -> Ok x
-                   | None -> Error "Account not found, I'm realy sorry"
+                   | Some x -> Ok (Some x)
+                   | None -> Ok (None)
         }
 
     member this.addAccount(account: PreActivatedAccount) =
         async {
-            accounts.Add(account.Identity.Identity, AllAccount.PreActivated account) |> ignore
+            accounts <- accounts.Add(account.Identity.Identity, AllAccount.PreActivated account)
             return Ok()
         }
