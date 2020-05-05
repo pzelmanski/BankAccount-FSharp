@@ -16,6 +16,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CommonTests", "CommonTests\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountIntegration", "BankAccountIntegration\BankAccountIntegration.fsproj", "{F108ACD3-D8B0-4DC1-90C6-793D58B24E4B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "IntegrationTests", "IntegrationTests\IntegrationTests.fsproj", "{9B824F40-A4FA-488F-B10B-F042C5E645F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{F108ACD3-D8B0-4DC1-90C6-793D58B24E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F108ACD3-D8B0-4DC1-90C6-793D58B24E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F108ACD3-D8B0-4DC1-90C6-793D58B24E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B824F40-A4FA-488F-B10B-F042C5E645F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B824F40-A4FA-488F-B10B-F042C5E645F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B824F40-A4FA-488F-B10B-F042C5E645F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B824F40-A4FA-488F-B10B-F042C5E645F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

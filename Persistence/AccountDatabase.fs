@@ -7,15 +7,16 @@ type AccountDatabase private () =
     static let instance = AccountDatabase()
     static member Instance = instance
 
-    member this.getAccount identity =
+    member this.get identity =
         async {
-            return accounts.TryFind identity
+            return identity
+                   |> accounts.TryFind
                    |> function
-                   | Some x -> Ok (Some x)
-                   | None -> Ok (None)
+                       | Some x -> Ok(Some x)
+                       | None -> Ok(None)
         }
 
-    member this.addAccount(account: PreActivatedAccount) =
+    member this.upsert(account: PreActivatedAccount) =
         async {
             accounts <- accounts.Add(account.Identity.Identity, AllAccount.PreActivated account)
             return Ok()

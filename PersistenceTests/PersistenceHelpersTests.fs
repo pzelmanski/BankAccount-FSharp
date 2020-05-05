@@ -11,11 +11,11 @@ module PersistenceHelpersTests =
     [<Fact>]
     let ``When adding to AccountDatabase it should persist`` () =
         async {
-            let r = BankAccount.create () |> AccountHelpers.add AccountDatabase.Instance.addAccount
+            let r = BankAccount.create () |> AccountHelpers.add AccountDatabase.Instance.upsert
 
             match! r with
             | Ok _ ->
-                let! r2 = AccountHelpers.get AccountDatabase.Instance.getAccount "1"
+                let! r2 = AccountHelpers.get AccountDatabase.Instance.get "1"
                 match r2 with
                 | Ok account ->
                     match account with

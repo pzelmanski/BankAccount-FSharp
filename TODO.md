@@ -1,6 +1,7 @@
 # TODO:
-[ ] GetAccount returns Ok None if no record found but wihout an exception
-[ ] AsyncResult -> add it into AccountHelpers at Persistance layer
+[X] GetAccount returns Ok None if no record found but wihout an exception
+[X] AsyncResult -> add it into AccountHelpers at Persistance layer
+[ ] Build TestAPI -> factories for mocks (or stubs or sth)
 [ ] Add an event store
 [ ] Make sure that Credit and Debit are positive
 [X] Implement Transactions (balance)

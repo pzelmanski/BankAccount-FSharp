@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Include="BankAccountIntegration.fs" />
+      <Compile Include="DataGateway.fs" />
     </ItemGroup>
 
 </Project>
