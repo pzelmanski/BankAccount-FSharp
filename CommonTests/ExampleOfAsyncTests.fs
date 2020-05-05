@@ -1,6 +1,5 @@
 ﻿namespace CommonTests
 
-
 open Xunit
 module AsyncResultTests =
     let dummy: Async<Result<int, string>> =
@@ -10,12 +9,13 @@ module AsyncResultTests =
 
     [<Fact>]
     let ``AsyncResult test`` () =
-        let x = dummy |> Async.RunSynchronously
-        Assert.Equal(x, Ok 15)
+        async {
+            match! dummy with
+                | Error msg -> failwith msg
+                | Ok _ -> ()
+        } |> Async.RunSynchronously
     
     [<Fact>]
     let ``AsyncResult test2`` () = async{
-        let! x = dummy2
-        Assert.Equal(x, Ok 15)}
-
-
+        let! result = dummy2
+        Assert.Equal(result, Ok 15)}
