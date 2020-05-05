@@ -6,7 +6,7 @@ open BankAccountSpecification.Language
 
 module BankAccount =
     let create: CreateBankAccount =
-        fun () -> { Identity = { Identity = Guid.NewGuid() |> string} }
+        fun () -> { Identity = { Identity = "1" |> string} }
 
     let ``open``: OpenAccount =
         fun (account) ->

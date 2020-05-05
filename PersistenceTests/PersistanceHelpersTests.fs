@@ -5,30 +5,22 @@ open Persistence
 open Xunit
 open FsUnit
 open BankAccountSpecification.Language
+open BankAccountInterpreter
 
-
-module PersistanceHelpersTests = 
-    [<Fact>]
-    let ``AccountDatabase should be empty on init`` () =
-        AccountDatabase.Instance.Accounts
-        |> List.isEmpty
-        |> should equal true
-        
+module PersistanceHelpersTests =
     [<Fact>]
     let ``When adding to AccountDatabase it should persist`` () =
-//        account
-//        |> persistanceHelpers.addAccount
-        
-        // TODO: this is all hardcoded for now
-        AccountHelpers.get AccountDatabase.Instance.getAccount "id"
-        |> function
+        async {
+            let r = BankAccount.create () |> AccountHelpers.add AccountDatabase.Instance.addAccount
+
+            match! r with
             | Ok _ ->
-                function
+                let! r2 = AccountHelpers.get AccountDatabase.Instance.getAccount "1"
+                match r2 with
+                | Ok account ->
+                    match account with
                     | Opened x -> x.Balance |> should equal 1m
                     | _ -> failwith "account not found"
-            | _ -> failwith "account not found"
-//        BankAccount.create ()
-//        |> ``open``
-//        |> updateBalance (Debit { Amount = 10m })
-//        |> takeLastTransaction
-//        |> should equal (Some(Debit { Amount = 10m }))
+                | Error e -> failwith e
+            | Error e -> failwith e
+        }

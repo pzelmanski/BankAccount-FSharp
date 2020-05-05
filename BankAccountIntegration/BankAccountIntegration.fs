@@ -7,5 +7,5 @@ open Persistence
 
 module BankAccountIntegration =
     let create =
-        BankAccount.create
+        BankAccount.create()
         |> AccountHelpers.add AccountDatabase.Instance.addAccount

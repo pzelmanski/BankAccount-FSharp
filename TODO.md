@@ -1,4 +1,5 @@
 # TODO:
+[ ] GetAccount returns Ok None if no record found but wihout an exception
 [ ] AsyncResult -> add it into AccountHelpers at Persistance layer
 [ ] Add an event store
 [ ] Make sure that Credit and Debit are positive

@@ -1,22 +1,22 @@
 ﻿namespace Persistence
 
 open BankAccountSpecification.Language
-open System
-open Persistance.Language
 
 type AccountDatabase private () =
+    let mutable accounts: Map<string, AllAccount> = Map.empty
     static let instance = AccountDatabase()
     static member Instance = instance
-    member this.Accounts : AllAccounts = []
-    
-    member this.getAccount() =
-        Ok (Opened <| { Identity = {Identity = Guid.NewGuid() |> string }
-                        Transactions = []
-                        Balance = 1m })
-        
-    member this.addAccount account =
-        Ok ()
-    
-//    member this.addAccount(account) =
-//        let x =  this.Accounts = this.Accounts::account
-//        Ok ()
+
+    member this.getAccount identity =
+        async {
+            return accounts.TryFind identity
+                   |> function
+                   | Some x -> Ok x
+                   | None -> Error "Account not found, I'm realy sorry"
+        }
+
+    member this.addAccount(account: PreActivatedAccount) =
+        async {
+            accounts.Add(account.Identity.Identity, AllAccount.PreActivated account) |> ignore
+            return Ok()
+        }
