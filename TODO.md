@@ -1,5 +1,5 @@
 # TODO:
-[ ] AsyncResult: HelloWorld unit test -> replace return types in BankAccountSpecification to AysncReslt where there are external dependencies (peristence) 
+[ ] AsyncResult -> add it into AccountHelpers at Persistance layer
 [ ] Add an event store
 [ ] Make sure that Credit and Debit are positive
 [X] Implement Transactions (balance)

@@ -13,6 +13,9 @@ type AccountDatabase private () =
         Ok (Opened <| { Identity = {Identity = Guid.NewGuid() |> string }
                         Transactions = []
                         Balance = 1m })
+        
+    member this.addAccount account =
+        Ok ()
     
 //    member this.addAccount(account) =
 //        let x =  this.Accounts = this.Accounts::account
