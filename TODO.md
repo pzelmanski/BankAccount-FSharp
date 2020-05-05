@@ -1,5 +1,5 @@
 # TODO:
-[ ] AsyncResult: HelloWorld unit test -> replace return types in BankAccountSpecification to AysncResuth where there are external dependencies (peristence) 
+[ ] AsyncResult: HelloWorld unit test -> replace return types in BankAccountSpecification to AysncReslt where there are external dependencies (peristence) 
 [ ] Add an event store
 [ ] Make sure that Credit and Debit are positive
 [X] Implement Transactions (balance)

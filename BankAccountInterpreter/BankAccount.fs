@@ -30,10 +30,10 @@ module BankAccount =
 
 //    let updateBalance2 account -> OpenedAcccount
 //        match account with
-//           | open -> updateBalance()     
+//           | open -> updateBalance()
 //           | _ -> DoNothing
-//  
-        
+//
+
     let updateBalance: ChangeBalance =
         fun transaction account ->
             { Identity = account.Identity

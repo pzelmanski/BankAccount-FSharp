@@ -49,3 +49,6 @@ type X = {ASD:Y; ..} and Y = {..} <- this `and` allows to forward references
 Units of Measures - take a look, think if could use (for a currency maybe?) <- a way to use kilograms or meters in code (let value = 1<kg>)
 
 Use NonEmptyList for ensuring that the list will not be empty (need to implement by myself or could use FSharpx.Collections)
+
+let createAsync: CreateBankAccountAsync =
+    fun () -> async { return ({ Identity = { Identity = Guid.NewGuid() |> string } } |> Ok) }
