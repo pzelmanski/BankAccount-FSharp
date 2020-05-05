@@ -3,7 +3,7 @@
 open BankAccountInterpreter
 open Xunit
 open BankAccountInterpreter.BankAccount
-open FsUnit.Xunit
+open FsUnit
 open BankAccountSpecification.Language
 
 module MyBankAccountTests =

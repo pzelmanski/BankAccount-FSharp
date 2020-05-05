@@ -1,39 +1,21 @@
 ﻿namespace CommonTests
 
-open Common.Language
-open FsUnit.Xunit
 
-module AsyncResultHelpers =
-    let dummy : AsyncResult<int, string> =
+open Xunit
+module AsyncResultTests =
+    let dummy: Async<Result<int, string>> =
+        async { return Ok 15 }
+    let dummy2 : Async<Result<int, string>> =
         15 |> Ok |> async.Return
 
-open AsyncResultHelpers
-(* let updateAccountAsync =
-        async {
-            account
-            |> updateBalance (Credit { Amount = 1.0m })
-            |> ignore
-        }
-
-    updateAccountAsync
-    |> List.replicate 1000
-    |> Async.Parallel
-    |> Async.RunSynchronously
-    |> ignore *)
+    [<Fact>]
+    let ``AsyncResult test`` () =
+        let x = dummy |> Async.RunSynchronously
+        Assert.Equal(x, Ok 15)
     
-    // TODO: Fix this
-module AsyncResultTests =
-    ()
-//    let ``AsyncResult test`` () =
-//        dummy |> Async.RunSynchronously
-//        |> should be (Ok 15)
-//        
-//        let myFunc = async { !dummy
-//                             |> should be true
-//                              }
-//        
-//        async { let! result = dummy
-//                let ok = (result = (Ok 15))
-//                ok |> should be true }
-//        |> Async.RunSynchronously
-        
+    [<Fact>]
+    let ``AsyncResult test2`` () = async{
+        let! x = dummy2
+        Assert.Equal(x, Ok 15)}
+
+

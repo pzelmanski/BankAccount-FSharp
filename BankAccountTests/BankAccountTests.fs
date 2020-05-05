@@ -1,7 +1,7 @@
 ﻿module BankAccountTest
 
 open Xunit
-open FsUnit.Xunit
+open FsUnit
 open BankAccountInterpreter.BankAccount
 open BankAccountSpecification.Language
 

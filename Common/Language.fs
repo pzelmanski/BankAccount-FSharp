@@ -1,4 +1,4 @@
 ﻿namespace Common
 
 module Language =
-    type AsyncResult<'a, 'b> = Async<Result<'a, 'b>>
+    type AsyncResult<'a, 'e> = Async<Result<'a, 'e>>

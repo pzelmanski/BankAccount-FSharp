@@ -3,7 +3,7 @@
 open Persistance
 open Persistence
 open Xunit
-open FsUnit.Xunit
+open FsUnit
 open BankAccountSpecification.Language
 
 
