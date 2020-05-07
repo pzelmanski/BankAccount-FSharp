@@ -3,7 +3,12 @@
 [X] AsyncResult -> add it into AccountHelpers at Persistance layer
 [ ] Build TestAPI -> factories for mocks (or stubs or sth)
     [ ] Add a factory for persistance tests
-[ ] Add an event store
+[X] Add an event store
+[ ] Add ATM Module
+[ ] Create proper BankEvent type
+    [ ] Implement credit / debit
+    [ ] Implement open / close account
+[ ] Implement event consuming within BankAccount module
 [ ] Make sure that Credit and Debit are positive
 [X] Implement Transactions (balance)
 [ ] Use more aliases to manage amiguity
