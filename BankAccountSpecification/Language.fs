@@ -35,4 +35,3 @@ module Language =
         | PreActivated of PreActivatedAccount
         | Opened of OpenedAccount
         | Closed of ClosedAccount
-        

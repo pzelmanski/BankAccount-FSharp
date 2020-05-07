@@ -18,6 +18,12 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountIntegration", "B
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "IntegrationTests", "IntegrationTests\IntegrationTests.fsproj", "{9B824F40-A4FA-488F-B10B-F042C5E645F4}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Events", "Events\Events.fsproj", "{412C9163-7510-451D-8F09-4274CBD04446}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EventsTests", "EventsTests\EventsTests.fsproj", "{63942E91-3AF8-42D1-938C-CFDD3AFA59D3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EventsSpecification", "EventsSpecification\EventsSpecification.fsproj", "{D836A69D-CC8B-4A26-BA22-12C2C1B9EFE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +66,17 @@ Global
 		{9B824F40-A4FA-488F-B10B-F042C5E645F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B824F40-A4FA-488F-B10B-F042C5E645F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B824F40-A4FA-488F-B10B-F042C5E645F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412C9163-7510-451D-8F09-4274CBD04446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412C9163-7510-451D-8F09-4274CBD04446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412C9163-7510-451D-8F09-4274CBD04446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412C9163-7510-451D-8F09-4274CBD04446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63942E91-3AF8-42D1-938C-CFDD3AFA59D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63942E91-3AF8-42D1-938C-CFDD3AFA59D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63942E91-3AF8-42D1-938C-CFDD3AFA59D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63942E91-3AF8-42D1-938C-CFDD3AFA59D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D836A69D-CC8B-4A26-BA22-12C2C1B9EFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D836A69D-CC8B-4A26-BA22-12C2C1B9EFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D836A69D-CC8B-4A26-BA22-12C2C1B9EFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D836A69D-CC8B-4A26-BA22-12C2C1B9EFE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
