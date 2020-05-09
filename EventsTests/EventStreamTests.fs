@@ -8,7 +8,6 @@ module EventStreamTests =
     let ``When adding to AccountDatabase it should persist`` () =
         async {
             let r = EventStream.Instance.insert "asd" "Event"
-
             match! r with
             | Ok _ ->
                 let! r2 = EventStream.Instance.get "asd"

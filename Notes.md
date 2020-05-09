@@ -52,3 +52,17 @@ Use NonEmptyList for ensuring that the list will not be empty (need to implement
 
 let createAsync: CreateBankAccountAsync =
     fun () -> async { return ({ Identity = { Identity = Guid.NewGuid() |> string } } |> Ok) }
+
+
+Person A
+    - Account 1
+        - GetBalance
+        - GetActiveCreditCards
+        - EventStream 1
+            - streamId
+                - "transactions"
+                    -> List of transaction to calculate balance
+                - "PaymentInfo"
+                    -> List of active credit cards
+    - Account 2
+        -EventStream 2
