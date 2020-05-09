@@ -6,6 +6,8 @@
 
     <ItemGroup>
       <Compile Include="Language.fs" />
+      <Compile Include="Specification.fs" />
+      <Compile Include="Mappers.fs" />
     </ItemGroup>
 
 </Project>

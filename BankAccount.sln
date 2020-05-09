@@ -18,7 +18,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountIntegration", "B
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "IntegrationTests", "IntegrationTests\IntegrationTests.fsproj", "{9B824F40-A4FA-488F-B10B-F042C5E645F4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Events", "Events\Events.fsproj", "{412C9163-7510-451D-8F09-4274CBD04446}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EventsInterpreter", "EventsInterpreter\EventsInterpreter.fsproj", "{412C9163-7510-451D-8F09-4274CBD04446}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EventsTests", "EventsTests\EventsTests.fsproj", "{63942E91-3AF8-42D1-938C-CFDD3AFA59D3}"
 EndProject

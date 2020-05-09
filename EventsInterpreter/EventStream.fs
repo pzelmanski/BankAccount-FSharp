@@ -1,4 +1,4 @@
-﻿namespace Events
+﻿namespace EventsInterpreter
 open EventsSpecification.Language
 
 module EventStreamModule =
@@ -7,6 +7,24 @@ module EventStreamModule =
         static let instance = EventStream()
         static member Instance = instance
 
+        (*
+        // account number = streamId
+        
+        Person A
+            - Account 1
+                - GetBalance
+                - GetActiveCreditCards
+                - EventStream 1
+                    - streamId
+                        - "transactions"
+                            -> List of transaction to calculate balance
+                        - "PaymentInfo"
+                            -> List of active credit cards
+            - Account 2
+                -EventStream 2
+        *)
+        
+        
         member this.get streamId =
             async {
                 return streamId

@@ -1,6 +1,6 @@
 ﻿namespace EventsTests
 
-open Events.EventStreamModule
+open EventsInterpreter.EventStreamModule
 open Xunit
 
 module EventStreamTests = 
@@ -20,4 +20,3 @@ module EventStreamTests =
                 | Error e -> failwith e
             | Error e -> failwith e
         }
-

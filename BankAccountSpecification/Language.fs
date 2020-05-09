@@ -1,5 +1,6 @@
 ﻿namespace BankAccountSpecification
 
+
 module Language = 
     type Money = decimal
     type Amount = decimal
@@ -12,6 +13,15 @@ module Language =
          | Credit of TransactionDetails
          
     type Transactions = Transaction list
+    
+    type Operation =
+        | CreateAccount
+        | OpenAccount
+        | CloseAccount
+    
+    type AccountEvent =
+        | AccountTransaction of Transaction
+        | AccountOperation of Operation
     
     type Id = string
     type Account = { Identity : Id }
