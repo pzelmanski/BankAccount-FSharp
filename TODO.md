@@ -4,7 +4,11 @@
 [ ] Build TestAPI -> factories for mocks (or stubs or sth)
     [ ] Add a factory for persistance tests
 [X] Add an event store
-[ ] Add ATM Module
+[X] Add ATM Module
+[ ] Implement ATM Module
+[ ] EventStream is created per account
+    [ ] Get rid of StreamId. Have a single EventStream, global for the whole system. (take a look at events drawing in /Notes/)
+    [ ] StreamId identifies a series of events within account which can be used to get latest state of a single entity within account
 [ ] Create proper BankEvent type
     [ ] Implement credit / debit
     [ ] Implement open / close account
