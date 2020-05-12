@@ -5,11 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="Language.fs" />
+      <Compile Include="Query.fs" />
+      <Compile Include="Command.fs" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\BankAccountSpecification\BankAccountSpecification.fsproj" />
+      <ProjectReference Include="..\Persistence\Persistence.fsproj" />
     </ItemGroup>
 
 </Project>

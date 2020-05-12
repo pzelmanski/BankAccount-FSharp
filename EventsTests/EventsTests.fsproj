@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <Compile Include="EventStreamTests.fs" />
+      <Compile Include="EventsFactory.fs" />
     </ItemGroup>
 
     <ItemGroup>

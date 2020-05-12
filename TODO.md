@@ -3,15 +3,24 @@
 [X] AsyncResult -> add it into AccountHelpers at Persistance layer
 [ ] Build TestAPI -> factories for mocks (or stubs or sth)
     [ ] Add a factory for persistance tests
+[ ] Add Data gateway operations into BankAccount.Operations module
+[ ] Fix tests for event stream
+    [ ] Create factory of events
+    [ ] Use it
+[ ] Add domain operations into BankAccountViewModel
+    [ ] Open / close account
+    [ ] Make a transaction
+    [ ] Get events and determine state of the account
+    [ ] Get events and calculate balance given transactions
 [X] Add an event store
 [X] Add ATM Module
 [ ] Implement ATM Module
-[ ] EventStream is created per account
-    [ ] Get rid of StreamId. Have a single EventStream, global for the whole system. (take a look at events drawing in /Notes/)
-    [ ] StreamId identifies a series of events within account which can be used to get latest state of a single entity within account
-[ ] Create proper BankEvent type
-    [ ] Implement credit / debit
-    [ ] Implement open / close account
+[X] EventStream is created per account
+    [X] Get rid of StreamId. Have a single EventStream, global for the whole system. (take a look at events drawing in /Notes/)
+    [X] StreamId identifies a series of events within account which can be used to get latest state of a single entity within account
+[X] Create proper BankEvent type
+    [X] Implement credit / debit
+    [X] Implement open / close account
 [ ] Implement event consuming within BankAccount module
 [ ] Make sure that Credit and Debit are positive
 [X] Implement Transactions (balance)

@@ -12,25 +12,16 @@ module Language =
          | Debit of TransactionDetails
          | Credit of TransactionDetails
          
-    type Transactions = Transaction list
     
     type Operation =
         | CreateAccount
         | OpenAccount
         | CloseAccount
     
-    type AccountEvent =
-        | AccountTransaction of Transaction
-        | AccountOperation of Operation
-    
     type Id = string
     type Account = { Identity : Id }
     
-    // some draft of an idea for a persistance layer
-    // list of accounts [id]
-    // create an event (accountId : id)
-    // find an account with accountId
-    // changeBalance of given account
+    type Transactions = Transaction list
     
     type OpenedAccount =
         { Identity : Account

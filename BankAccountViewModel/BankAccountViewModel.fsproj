@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="BankAccountViewModel.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BankAccountDataGateway\BankAccountDataGateway.fsproj" />
+      <ProjectReference Include="..\BankAccountInterpreter\BankAccountInterpreter.fsproj" />
+    </ItemGroup>
+
+</Project>

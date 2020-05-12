@@ -19,21 +19,6 @@ module BankAccount =
     let balance: GetBalance =
         fun account -> account.Balance
 
-// My idea on how in a near future it will look like:
-
-//     event: accountId, Debit(5m)
-//     HandleDebit(accountId, Debit)
-//          let account = Persistance.GetAccount(accountId)
-//          updateBalance2(account, debit)
-//          Persistance.Persist(account)
-//          SendEvent UpdatedBalance accountId, transactionId
-
-//    let updateBalance2 account -> OpenedAcccount
-//        match account with
-//           | open -> updateBalance()
-//           | _ -> DoNothing
-//
-
     let updateBalance: ChangeBalance =
         fun transaction account ->
             { Identity = account.Identity

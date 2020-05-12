@@ -87,3 +87,9 @@ type PlaceOrderEvent =
     | BillableOrderPlaced of BillableOrderPlaced
     | AcknowledgmentSent of AcknowledgmentSent
 ```
+
+Importing a type like
+```fsharp
+type AccountLanguageOperation = BankAccountSpecification.Language.Operation
+```
+works only on types, not on modules nor namespaces
