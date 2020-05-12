@@ -7,15 +7,22 @@ module EventStreamTests =
     [<Fact>]
     let ``When adding to AccountDatabase it should persist`` () =
         async {
-            let r = EventStream.Instance.insert "asd" "Event"
-            match! r with
-            | Ok _ ->
-                let! r2 = EventStream.Instance.get "asd"
-                match r2 with
-                | Ok bankAccountEventOption ->
-                    match bankAccountEventOption with
-                        | Some _ -> ()
-                        | None -> failwith "account not existing"
-                | Error e -> failwith e
-            | Error e -> failwith e
+            let! _ = EventStream.Instance.insert "Event"
+            
+            let! result = EventStream.Instance.getAll
+            match result |> Seq.toList with
+            | _::[] -> ()
+            | _ -> failwith "expected a single element"
+        }
+
+    [<Fact>]
+    let ``When inserting multiple events it should persist`` () =
+        async {
+            let! _ = EventStream.Instance.insert "Event"
+            let! _ = EventStream.Instance.insert "Event2"
+            
+            let! result = EventStream.Instance.getAll
+            match result |> Seq.toList with
+            | _::_::[] -> ()
+            | _ -> failwith "Expected to be two elements"
         }

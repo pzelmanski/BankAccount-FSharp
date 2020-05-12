@@ -66,3 +66,24 @@ Person A
                     -> List of active credit cards
     - Account 2
         -EventStream 2
+
+
+
+===
+
+command:
+```fsharp
+type Command<'data> = {
+    Data: 'data
+    TimeStamp: DateTime
+    UserId: string
+    // ...
+}
+```
+Event:
+```fsharp
+type PlaceOrderEvent = 
+    | OrderPlaced of OrderPlaced
+    | BillableOrderPlaced of BillableOrderPlaced
+    | AcknowledgmentSent of AcknowledgmentSent
+```

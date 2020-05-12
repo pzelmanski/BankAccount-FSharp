@@ -3,23 +3,16 @@ open EventsSpecification.Language
 
 module EventStreamModule =
     type EventStream private () =
-        let mutable events: Map<StreamId, seq<BankEvent>> = Map.empty
+        let mutable events: seq<BankEvent> = Seq.empty
         static let instance = EventStream()
         static member Instance = instance
-        member this.get streamId =
+        member this.getAll =
             async {
-                return streamId
-                       |> events.TryFind
-                       |> function
-                           | Some x -> Ok(Some x)
-                           | None -> Ok(None)
+                return events
             }
 
-        member this.insert streamId event =
+        member this.insert event =
             async {
-                streamId |> events.TryFind
-                |> function
-                    | Some e -> events <- events.Add(streamId, event::(e |> Seq.toList))
-                    | None -> events <- events.Add(streamId, [event])
+                events <- Seq.append events (seq [event])
                 return Ok()
             }
