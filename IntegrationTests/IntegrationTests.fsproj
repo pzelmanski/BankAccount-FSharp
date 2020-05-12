@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="BankAccountIntegrationTests.fs" />
+      <Compile Include="ViewModelTests.fs" />
     </ItemGroup>
 
     <ItemGroup>

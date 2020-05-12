@@ -2,9 +2,8 @@
 
 open Xunit
 
-open BankAccountIntegration
-
-module BankAccountIntegrationTests = 
+module BankAccountViewModelTests =
+    // TODO: Replace DataGateway with VM
     [<Fact>]
     let ``When adding to AccountDatabase it should persist`` () =
         async {
