@@ -1,9 +1,7 @@
 ﻿namespace PersistanceTests
 
-open Persistance
 open Persistence
 open Xunit
-open FsUnit
 open BankAccountSpecification.Language
 open BankAccountInterpreter
 
@@ -11,11 +9,13 @@ module PersistenceHelpersTests =
     [<Fact>]
     let ``When adding to AccountDatabase it should persist`` () =
         async {
-            let r = BankAccount.create () |> AccountHelpers.add AccountDatabase.Instance.upsert
+            let r = BankAccount.create ("1")
+                    |> AllAccount.PreActivated
+                    |> AccountDatabase.Instance.upsert
 
             match! r with
             | Ok _ ->
-                let! r2 = AccountHelpers.get AccountDatabase.Instance.get "1"
+                let! r2 = AccountDatabase.Instance.get "1"
                 match r2 with
                 | Ok account ->
                     match account with

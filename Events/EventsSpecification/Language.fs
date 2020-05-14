@@ -3,7 +3,10 @@
 open System
 
 module Language =
-    type AccountLanguageOperation = BankAccountSpecification.Language.Operation
+    type AccountLanguageOperation =
+        | CreateAccount
+        | OpenAccount
+        | CloseAccount
     type AccountLanguageTransaction = BankAccountSpecification.Language.Transaction
     type AccountLanguageIdentity = BankAccountSpecification.Language.Account
     

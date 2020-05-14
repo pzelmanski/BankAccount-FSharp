@@ -8,7 +8,7 @@ open BankAccountSpecification.Language
 
 [<Fact>]
 let ``Check basic balance`` () =
-    let account = create () |> ``open``
+    let account = create ("1") |> makeOpen
     let openingBalance = account |> balance
 
     let updatedBalance =
@@ -21,7 +21,7 @@ let ``Check basic balance`` () =
 
 [<Fact>]
 let ``Balance can increment or decrement`` () =
-    let account = create () |> ``open``
+    let account = create ("1") |> makeOpen
     let openingBalance = account |> balance
 
     let addedBalance =
@@ -41,8 +41,8 @@ let ``Balance can increment or decrement`` () =
 [<Fact>]
 let ``Account can be closed`` () =
     let account =
-        create ()
-        |> ``open``
+        create ("1")
+        |> makeOpen
         |> close
 
     balance account |> should equal None
@@ -51,7 +51,7 @@ let ``Account can be closed`` () =
 [<Fact>]
 let ``Account can be updated from multiple threads`` () =
     let account =
-        create () |> ``open``
+        create ("1") |> makeOpen
 
     let updateAccountAsync =
         async {

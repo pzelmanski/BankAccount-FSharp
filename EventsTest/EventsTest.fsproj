@@ -5,7 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="ViewModelTests.fs" />
+      <Compile Include="EventsFactory.fs" />
+      <Compile Include="EventStreamTests.fs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -16,7 +17,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BankAccountViewModel\BankAccountViewModel.fsproj" />
+      <ProjectReference Include="..\EventsInterpreter\EventsInterpreter.fsproj" />
+      <ProjectReference Include="..\Events\EventsSpecification\EventsSpecification.fsproj" />
     </ItemGroup>
 
 </Project>

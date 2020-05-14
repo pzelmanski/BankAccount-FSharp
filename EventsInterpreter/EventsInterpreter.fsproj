@@ -11,8 +11,6 @@
     <ItemGroup>
       <ProjectReference Include="..\BankAccountSpecification\BankAccountSpecification.fsproj" />
       <ProjectReference Include="..\EventsSpecification\EventsSpecification.fsproj" />
-      <ProjectReference Include="..\Events\EventsSpecification\EventsSpecification.fsproj" />
-      <ProjectReference Include="..\Persistence\Persistence.fsproj" />
     </ItemGroup>
 
 </Project>

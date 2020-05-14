@@ -13,11 +13,6 @@ module Language =
          | Credit of TransactionDetails
          
     
-    type Operation =
-        | CreateAccount
-        | OpenAccount
-        | CloseAccount
-    
     type Id = string
     type Account = { Identity : Id }
     

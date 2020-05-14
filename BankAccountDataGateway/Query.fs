@@ -4,6 +4,6 @@ open Persistance
 open Persistence
 
 module Query =
-    let GetAccount identity =
+    let getAccount identity =
         identity
-        |> AccountHelpers.get AccountDatabase.Instance.get
+        |> AccountDatabase.Instance.get

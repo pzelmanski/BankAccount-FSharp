@@ -5,12 +5,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="Language.fs" />
-      <Compile Include="AccountDatabase.fs" />
+        <Compile Include="EventStream.fs" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BankAccountSpecification\BankAccountSpecification.fsproj" />
+      <ProjectReference Include="..\Events\EventsSpecification\EventsSpecification.fsproj" />
     </ItemGroup>
 
 </Project>

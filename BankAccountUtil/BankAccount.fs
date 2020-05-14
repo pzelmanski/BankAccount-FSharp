@@ -8,7 +8,7 @@ module BankAccount =
         fun (identity) ->
             { Identity = { Identity = identity } }
 
-    let ``open``: OpenAccount =
+    let makeOpen: OpenAccount =
         fun (account) ->
             { Identity = account.Identity
               Transactions = []

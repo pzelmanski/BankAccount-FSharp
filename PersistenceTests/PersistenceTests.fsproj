@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="PersistenceHelpersTests.fs" />
+      <Compile Include="PersistenceTests.fs" />
     </ItemGroup>
 
     <ItemGroup>

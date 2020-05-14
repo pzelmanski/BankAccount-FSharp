@@ -7,7 +7,7 @@ type AccountDatabase private () =
     static let instance = AccountDatabase()
     static member Instance = instance
 
-    member this.get identity =
+    member this.get (identity) =
         async {
             return identity
                    |> accounts.TryFind
@@ -16,8 +16,12 @@ type AccountDatabase private () =
                        | None -> Ok(None)
         }
 
-    member this.upsert(account: PreActivatedAccount) =
+    member this.upsert(account : AllAccount) =
         async {
-            accounts <- accounts.Add(account.Identity.Identity, AllAccount.PreActivated account)
+            match account with
+            | PreActivated a -> accounts <- accounts.Add(a.Identity.Identity, account)
+            | Opened a -> accounts <- accounts.Add(a.Identity.Identity, account)
+            | Closed a -> accounts <- accounts.Add(a.Identity.Identity, account)
+            
             return Ok()
         }
