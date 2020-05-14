@@ -6,11 +6,10 @@ type EventStream private () =
     let mutable eventStream: seq<BankEvent> = Seq.empty
     static let instance = EventStream()
     static member Instance = instance
-//    member this.getAll () =
-//        async {
-//            return eventStream
-//        } 
+    member this.getAll() = async { return eventStream }
 
-    member this.insert(event : BankEvent) =
-//            eventStream <- Seq.append eventStream (seq [event])
-        Ok()
+    member this.insert(event: BankEvent) =
+        async {
+            eventStream <- Seq.append eventStream (seq [ event ])
+            return Ok()
+        }

@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\EventsInterpreter\EventsInterpreter.fsproj" />
+      <ProjectReference Include="..\EventsInterpreter2\EventsInterpreter2.fsproj" />
       <ProjectReference Include="..\Events\EventsSpecification\EventsSpecification.fsproj" />
     </ItemGroup>
 
