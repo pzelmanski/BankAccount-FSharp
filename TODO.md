@@ -4,11 +4,15 @@
 [ ] Build TestAPI -> factories for mocks (or stubs or sth)
     [ ] Add a factory for persistance tests
 [ ] Add Data gateway operations into BankAccount.Operations module
+[ ] expand event test factory
 [ ] Fix tests for event stream
     [ ] Create factory of events
     [ ] Use it
 [ ] Add domain operations into BankAccountViewModel
     [ ] Open / close account
+        [X] create account
+        [X] open account
+        [ ] close account
     [ ] Make a transaction
     [ ] Get events and determine state of the account
     [ ] Get events and calculate balance given transactions
