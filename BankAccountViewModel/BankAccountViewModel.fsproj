@@ -10,7 +10,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BankAccountDataGateway\BankAccountDataGateway.fsproj" />
-      <ProjectReference Include="..\BankAccountInterpreter\BankAccountInterpreter.fsproj" />
+      <ProjectReference Include="..\BankAccountUtil\BankAccountUtil.fsproj" />
     </ItemGroup>
 
 </Project>

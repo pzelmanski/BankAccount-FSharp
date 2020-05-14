@@ -1,12 +1,12 @@
 ﻿namespace BankAccountInterpreter
 
-open System
 open BankAccountSpecification.Operations
 open BankAccountSpecification.Language
 
 module BankAccount =
     let create: CreateBankAccount =
-        fun () -> { Identity = { Identity = "1" |> string} }
+        fun (identity) ->
+            { Identity = { Identity = identity } }
 
     let ``open``: OpenAccount =
         fun (account) ->

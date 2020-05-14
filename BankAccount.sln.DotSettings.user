@@ -5,11 +5,21 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03fe767a_002D6ef5_002D41ac_002Dbc61_002De7410107b1ec/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4e44c749_002Da736_002D4bf7_002D8248_002Df341c2dc516b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="When VM creates an account, it should be created" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::9B824F40-A4FA-488F-B10B-F042C5E645F4::.NETCoreApp,Version=v3.1::IntegrationTests.BankAccountViewModelTests.When VM creates an account, it should be created&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c1bcd768_002D6962_002D4f6f_002D8026_002D45948b94e141/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="When adding to AccountDatabase it should persist" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb212ad0_002D3dd0_002D4ebb_002D8456_002Dcf0ffa3c5488/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="When adding to AccountDatabase it should persist #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::63942E91-3AF8-42D1-938C-CFDD3AFA59D3::.NETCoreApp,Version=v3.1::EventsTests.EventStreamTests.When adding to AccountDatabase it should persist&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d64aff5e_002Db90e_002D443a_002D90c2_002D4eda2428b539/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="When VM creates an account, it should be created #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::9B824F40-A4FA-488F-B10B-F042C5E645F4::.NETCoreApp,Version=v3.1::IntegrationTests.BankAccountViewModelTests.When VM creates an account, it should be created&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

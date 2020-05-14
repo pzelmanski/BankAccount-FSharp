@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountInterpreter", "BankAccountInterpreter\BankAccountInterpreter.fsproj", "{FBCEE42D-573D-48EA-A6D2-F871DC98703E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountUtil", "BankAccountUtil\BankAccountUtil.fsproj", "{FBCEE42D-573D-48EA-A6D2-F871DC98703E}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BankAccountTests", "BankAccountTests\BankAccountTests.fsproj", "{24F9FD68-8401-420E-97C6-5E22AF5D3E56}"
 EndProject

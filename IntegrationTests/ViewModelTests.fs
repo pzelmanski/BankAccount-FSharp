@@ -1,15 +1,17 @@
 ﻿namespace IntegrationTests
 
 open Xunit
+open BankAccountViewModel
 
 module BankAccountViewModelTests =
-    // TODO: Replace DataGateway with VM
     [<Fact>]
-    let ``When adding to AccountDatabase it should persist`` () =
-        async {
-            match! DataGateway.createAccount with
-            | Ok _ -> match! DataGateway.getAccount "1" with 
-                        | Some _ -> ()
-                        | None -> failwith "Failed to get account"
-            | _ -> failwith "failed to create account"
+    let ``When VM creates an account, it should be created`` () =
+        async{
+            // Act
+            BankAccountViewModel.createAccount "asd"
+            
+            // Assert
+            match BankAccountViewModel.getAccount "asd" with
+            | Some account -> () //TODO: assert account
+            | None -> failwith "no account found"
         }
