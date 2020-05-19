@@ -1,5 +1,7 @@
 ﻿namespace BankAccountInterpreter
 
+open System
+open BankAccountSpecification
 open BankAccountSpecification.Operations
 open BankAccountSpecification.Language
 
@@ -14,8 +16,9 @@ module BankAccount =
               Transactions = []
               Balance = 0.0m }
 
-    let close account = failwith "You need to implement this function."
-
+    let close (account : OpenedAccount) =
+        { ClosedAccount.Identity = account.Identity }
+        
     let balance: GetBalance =
         fun account -> account.Balance
 
@@ -31,3 +34,12 @@ module BankAccount =
 
     let takeLastTransaction: TakeLastTransaction =
         fun account -> account.Transactions |> List.tryHead
+
+    let createTransaction : CreateTransaction =
+        fun openedAccount money ->
+            {
+                Identity = openedAccount.Identity
+                TimeStamp = DateTime.Now
+                Amount = money
+            } |> Transaction.Credit
+            

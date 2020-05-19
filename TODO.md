@@ -1,4 +1,12 @@
 # TODO:
+[ ] Add domain operations into BankAccountViewModel
+    [ ] Open / close account
+        [X] create account
+        [X] open account
+        [X] close account
+    [ ] Make a transaction
+    [ ] Get events and determine state of the account
+    [ ] Get events and calculate balance given transactions
 [ ] Implement ATM Module
 [ ] Build TestAPI [its not exactly testApi] -> factories for mocks (or stubs or sth)
     [ ] Add a factory for persistance tests
@@ -7,14 +15,6 @@
 [ ] expand event test factory
 [ ] Implement event consuming within BankAccount module
 [ ] Make sure that Credit and Debit are positive
-[ ] Add domain operations into BankAccountViewModel
-    [ ] Open / close account
-        [X] create account
-        [X] open account
-        [ ] close account
-    [ ] Make a transaction
-    [ ] Get events and determine state of the account
-    [ ] Get events and calculate balance given transactions
 [ ] Add validation of domain rules (transaction always > 0) via private ctor & factory method returning Result<'a>
     * Then to get the value in pattern matching, I'd use the value function for returning the wrapped value `let value(UnitQty qty) = qty`
 [ ] Custom equals for entity types

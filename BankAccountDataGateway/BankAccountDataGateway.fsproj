@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BankAccountUtil\BankAccountUtil.fsproj" />
+      <ProjectReference Include="..\EventsInterpreter2\EventsInterpreter2.fsproj" />
       <ProjectReference Include="..\Persistence\Persistence.fsproj" />
     </ItemGroup>
 

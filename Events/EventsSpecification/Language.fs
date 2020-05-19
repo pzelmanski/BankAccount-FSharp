@@ -11,20 +11,20 @@ module Language =
     type AccountLanguageIdentity = BankAccountSpecification.Language.Account
     
     type BankEventType = string
-
-    type TransactionEvent = {
-        Identity: AccountLanguageIdentity
-        Context: AccountLanguageTransaction
-    }
     
     type AccountOperationEvent = {
         Identity: AccountLanguageIdentity
         Context: AccountLanguageOperation
     }
     
+    type TransactionOperationEvent = {
+        Identity: AccountLanguageIdentity
+        Context: AccountLanguageTransaction
+    }
+    
     type BankEventInner =
         | AccountOperation of AccountOperationEvent
-        | Transaction of TransactionEvent
+        | Transaction of TransactionOperationEvent
     
     type BankEvent = {
         Identity : string

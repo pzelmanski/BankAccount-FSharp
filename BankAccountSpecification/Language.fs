@@ -1,21 +1,25 @@
 ﻿namespace BankAccountSpecification
 
+open System
+
 
 module Language = 
     type Money = decimal
     type Amount = decimal
     
+    type Account = { Identity : string }
+    
     type TransactionDetails =
-          { Amount : Amount }
+          {
+              Identity : Account
+              TimeStamp : DateTime
+              Amount : Amount
+          }
     
     type Transaction =
          | Debit of TransactionDetails
          | Credit of TransactionDetails
          
-    
-    type Id = string
-    type Account = { Identity : Id }
-    
     type Transactions = Transaction list
     
     type OpenedAccount =
