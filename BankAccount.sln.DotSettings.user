@@ -8,6 +8,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4e44c749_002Da736_002D4bf7_002D8248_002Df341c2dc516b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="When VM creates an account, it should be created" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=669fe751_002D51c2_002D4337_002D99dc_002D8f9a616330e8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BankAccountViewModelTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::9B824F40-A4FA-488F-B10B-F042C5E645F4::.NETCoreApp,Version=v3.1::IntegrationTests.BankAccountViewModelTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c1bcd768_002D6962_002D4f6f_002D8026_002D45948b94e141/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="When adding to AccountDatabase it should persist" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
@@ -17,12 +22,5 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d64aff5e_002Db90e_002D443a_002D90c2_002D4eda2428b539/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="When VM creates an account, it should be created #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Or&gt;&#xD;
-    &lt;TestAncestor&gt;&#xD;
-      &lt;TestId&gt;xUnit::9B824F40-A4FA-488F-B10B-F042C5E645F4::.NETCoreApp,Version=v3.1::IntegrationTests.BankAccountViewModelTests.When VM creates an account, it should be created&lt;/TestId&gt;&#xD;
-    &lt;/TestAncestor&gt;&#xD;
-    &lt;TestAncestor&gt;&#xD;
-      &lt;TestId&gt;xUnit::55E5013B-C956-44D8-84A7-FC10D6CD2DA5::.NETCoreApp,Version=v3.1::EventsTest.EventStreamTests&lt;/TestId&gt;&#xD;
-    &lt;/TestAncestor&gt;&#xD;
-  &lt;/Or&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

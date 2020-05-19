@@ -27,6 +27,7 @@ module Language =
         | Transaction of TransactionEvent
     
     type BankEvent = {
+        Identity : string
         Timestamp: DateTime
         TypeAndContext: BankEventInner
         }
